@@ -1,0 +1,128 @@
+/* Estilo general para el body */
+body {
+    font-family: 'Comic Sans MS', 'Arial', sans-serif; /* Fuente cursiva y linda */
+    background-color: #ffe6f2; /* Fondo rosado suave */
+    color: #ff80bf; /* Texto rosado más oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    font-size: 16px;
+}
+
+/* Estilo para el título principal */
+h1 {
+    font-family: 'Pacifico', cursive; /* Letra cursiva y linda */
+    color: #ff4da6; /* Rosado más vibrante */
+    margin-top: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 5px #ff99cc; /* Sombras suaves */
+}
+
+/* Estilo para el input de nueva tarea */
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ffb3d9; /* Borde rosado claro */
+    border-radius: 25px; /* Bordes redondeados */
+    outline: none;
+    font-size: 1em;
+    box-shadow: 2px 2px 5px rgba(255, 182, 193, 0.5);
+    transition: 0.3s;
+}
+
+/* Cambiar color del input al hacer foco */
+input[type="text"]:focus {
+    border-color: #ff66b2; /* Cambia a un rosado más vibrante */
+    box-shadow: 2px 2px 10px rgba(255, 102, 178, 0.7);
+}
+
+/* Estilo para el botón de agregar tarea */
+button {
+    background-color: #ff99cc; /* Fondo rosado pastel */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(255, 153, 204, 0.7);
+    transition: 0.3s;
+}
+
+/* Cambiar color del botón al pasar el mouse */
+button:hover {
+    background-color: #ff4da6; /* Rosado más fuerte */
+    box-shadow: 2px 2px 10px rgba(255, 77, 166, 0.8);
+}
+
+/* Estilo para la lista de tareas */
+ul {
+    list-style: none; /* Eliminar los puntos de la lista */
+    padding: 0;
+    margin-top: 20px;
+    width: 350px;
+    max-height: 400px;
+    overflow-y: auto; /* Scroll si hay muchas tareas */
+    border: 2px solid #ffb3d9;
+    border-radius: 25px;
+    background-color: #fff0f5; /* Fondo blanco rosado */
+    box-shadow: 2px 2px 10px rgba(255, 182, 193, 0.5);
+}
+
+/* Estilo para los elementos de la lista */
+ul li {
+    background-color: #ffe6f2; /* Fondo rosado suave */
+    color: #ff4da6; /* Texto rosado más oscuro */
+    margin: 10px;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 2px 2px 5px rgba(255, 153, 204, 0.5);
+    transition: 0.3s;
+}
+
+/* Cambiar fondo al pasar el mouse por las tareas */
+ul li:hover {
+    background-color: #ffccdd; /* Rosado más vibrante */
+    box-shadow: 2px 2px 10px rgba(255, 102, 178, 0.7);
+}
+
+/* Estilo para los botones de eliminar dentro de las tareas */
+ul li button {
+    background-color: #ff4da6; /* Fondo rosado fuerte */
+    color: #fff; /* Texto blanco */
+    border: none;
+    border-radius: 15px;
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(255, 77, 166, 0.8);
+    transition: 0.3s;
+}
+
+/* Cambiar color del botón de eliminar al pasar el mouse */
+ul li button:hover {
+    background-color: #ff80bf; /* Rosado pastel */
+    box-shadow: 2px 2px 10px rgba(255, 128, 191, 0.8);
+}
+
+/* Scroll personalizado para la lista de tareas */
+ul::-webkit-scrollbar {
+    width: 8px;
+}
+
+ul::-webkit-scrollbar-thumb {
+    background-color: #ff99cc;
+    border-radius: 10px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+    background-color: #ff66b2;
+}
